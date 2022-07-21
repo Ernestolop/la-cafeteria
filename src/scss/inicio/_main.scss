@@ -1,0 +1,17 @@
+@use '../base/variables' as v; //para scss: ../base/variables = base/variables
+@use '../base/mixins' as m;
+
+.main{
+    padding: v.$sep50 v.$sep20;
+    background-color: v.$blanco;
+    max-width: 75rem;
+    width: 90%;
+    margin: 0 auto;
+    @include m.tablet { 
+        position: relative;
+        margin-top: - calc(v.$sep50*2);
+        padding: calc(v.$sep50*2);
+    }
+}
+
+

@@ -1,0 +1,67 @@
+@use 'variables' as v;
+
+html{
+    box-sizing: border-box;
+    font-size: 12px;
+}
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+@media (min-width:300px){
+    html{
+        font-size: 14px;
+    }
+}
+@media (min-width:480px){
+    html{
+        font-size: 16px;
+    }
+}
+@media (min-width:1024px){
+    html{
+        font-size: 18px;
+    }
+}
+
+
+
+body{
+    font-size: 1rem;
+    font-family: v.$fuenteSecundaria;
+    line-height: 1.5;
+    background-color: v.$cafeClaro;
+}
+img, 
+video,
+audio{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: v.$negro;
+}
+p{
+    font-size: v.$font-size-base;
+}
+h1, h2, h3{
+    margin: 0 0 v.$sep50 0;
+    line-height: 1.2;
+    font-size: v.$font-size-xl;
+}
+h1{
+    font-weight: 900;
+}
+h2{
+    font-weight: 700;
+}
+h3{
+    font-weight: 700;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+

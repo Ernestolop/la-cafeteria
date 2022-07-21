@@ -1,0 +1,23 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.iconos{
+    margin-top: v.$sep50;
+}
+.iconos__listado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include m.tablet { 
+        flex-direction:row;
+        justify-content: space-around;
+    }
+}
+.iconos__icono{
+    width: calc(v.$sep20 + v.$sep50*2);
+}
+.iconos__p{
+    font-family: v.$fuenteCursiva;
+    font-size: v.$font-size-xl;
+    color: v.$primario;
+}

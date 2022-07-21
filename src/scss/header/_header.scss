@@ -1,0 +1,120 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.header{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: v.$negro;
+        opacity: .6;
+    }
+    @include m.tablet { 
+        min-height: calc(v.$sep50*12);       
+    }
+}
+.header__contenedor{
+    position: relative;
+    padding: v.$sep50 0;
+}
+.header__slogan{
+    color: v.$blanco;
+    text-transform: uppercase;
+    margin: 0;
+    @include m.tablet { 
+        margin-top: calc(v.$sep50*2);
+    }
+}
+//header paginas:
+/* inicio */
+.header--inicio{
+    background-size: cover;
+    background-position-x: 15%;
+    @include m.tablet { 
+        background-position: 0% 20%;
+
+    }
+}
+.notavif.notwebp .header--inicio{
+    background-image: url(../img/header_inicio.jpg);
+}
+.webp .header--inicio{
+    background-image: url(../img/header_inicio.webp);
+}
+.avif .header--inicio{
+    background-image: url(../img/header_inicio.avif);
+}
+/* nosotros */
+.header--nosotros{
+    background-size: cover;
+    background-position: 18% 80%;
+}
+.notavif.notwebp .header--nosotros{
+    background-image: url(../img/header_nosotros.jpg);
+}
+.webp .header--nosotros{
+    background-image: url(../img/header_nosotros.webp);
+}
+.avif .header--nosotros{
+    background-image: url(../img/header_nosotros.avif);
+}
+/* proceso */
+.header--proceso{
+    background-size: cover;
+    background-position: center 80%;
+}
+.notavif.notwebp .header--proceso{
+    background-image: url(../img/header_proceso.jpg);
+}
+.webp .header--proceso{
+    background-image: url(../img/header_proceso.webp);
+}
+.avif .header--proceso{
+    background-image: url(../img/header_proceso.avif);
+}
+/* menu */
+.header--menu{
+    background-size: cover;
+    background-position: center 80%;
+}
+.notavif.notwebp .header--menu{
+    background-image: url(../img/header_menu.jpg);
+}
+.webp .header--menu{
+    background-image: url(../img/header_menu.webp);
+}
+.avif .header--menu{
+    background-image: url(../img/header_menu.avif);
+}
+/* galeria */
+.header--galeria{
+    background-size: cover;
+    background-position: top center;
+}
+.notavif.notwebp .header--galeria{
+    background-image: url(../img/header_galeria.jpg);
+}
+.webp .header--galeria{
+    background-image: url(../img/header_galeria.webp);
+}
+.avif .header--galeria{
+    background-image: url(../img/header_galeria.avif);
+}
+/* contacto */
+.header--contacto{
+    background-size: cover;
+    background-position: 40% center;
+}
+.notavif.notwebp .header--contacto{
+    background-image: url(../img/header_contacto.jpg);
+}
+.webp .header--contacto{
+    background-image: url(../img/header_contacto.webp);
+}
+.avif .header--contacto{
+    background-image: url(../img/header_contacto.avif);
+}

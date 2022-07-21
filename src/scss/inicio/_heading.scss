@@ -1,0 +1,30 @@
+@use '../base/variables' as v;
+
+.heading{
+    text-transform: uppercase;
+    color: v.$primario;
+    &::after{
+        content: '';
+        display: block;
+        margin: 0 auto;
+        width: calc(v.$sep50*2);
+        height: calc(v.$sep50*2);
+        background-image: url(../img/cafe.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+.heading__span{
+    display: block;
+    font-size: v.$font-size-md;
+    color: v.$secundario;
+}
+.heading--blanco,
+.heading__span--blanco{
+    color: v.$blanco;
+}
+.heading--blanco{
+    &::after{
+        display: none;
+    }
+}

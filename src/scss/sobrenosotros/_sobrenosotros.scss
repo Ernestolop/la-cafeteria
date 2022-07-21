@@ -1,0 +1,25 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.sobreNosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: v.$sep40;
+    @include m.tablet { 
+        @include m.grid(2, v.$sep40){
+            align-items: start;
+        }
+    }
+}
+.sobreNosotros__imagen{
+    transform: rotate(-6deg);
+    border: v.$sep30 solid v.$blanco;
+    box-shadow: 9px 10px 5px -7px rgba(0, 0, 0, .35);
+}
+.sobreNosotros__frase{
+    margin: 0;
+    padding: v.$sep10;
+    border-left: v.$sep5 solid v.$primario;
+    font-size: v.$font-size-md;
+}

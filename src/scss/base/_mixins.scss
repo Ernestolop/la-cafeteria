@@ -1,0 +1,26 @@
+@use '../base/variables' as v;
+
+// Media queries
+@mixin telefono {
+    @media (min-width: v.$telefono) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+
+// Grid
+@mixin grid($columnas, $gap){
+    display: grid;
+    grid-template-columns: repeat( $columnas, 1fr);
+    gap: $gap;
+    @content;
+}

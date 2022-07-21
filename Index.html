@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria SASS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+
+    <header class="header header--inicio">
+        <div class="header__contenedor">
+            <div class="barra">
+                <img src="build/img/logo.svg" alt="imagen logo" class="barra__logo">
+                <div class="navegacion">
+                    <a href="#" class="navegacion__link navegacion__link--cp">Inicio</a>
+                    <a href="nosotros.html" class="navegacion__link">Nosotros</a>
+                    <a href="proceso.html" class="navegacion__link">Proceso</a>
+                    <a href="menu.html" class="navegacion__link">Menú</a>
+                    <a href="galeria.html" class="navegacion__link">Galería</a>
+                    <a href="contacto.html" class="navegacion__link">Contacto</a>
+                </div>
+            </div>
+            <h1 class="header__slogan text-center">Disfruta de una deliciosa taza de café</h1>
+        </div>
+    </header>
+
+    <main class="main text-center">
+
+        <section class="Conoce">
+            <h2 class="heading"><span class="heading__span">Conoce más</span> sobre nosotros</h2>
+            <p class="conoce__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat provident est necessitatibus, sint aliquam officiis quisquam perferendis ratione blanditiis neque consectetur eius rem odit perspiciatis ab! Veritatis iusto reiciendis voluptates! lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ullam provident at non corrupti asperiores illum quia repudiandae vel sunt maxime assumenda pariatur impedit recusandae accusamus nulla obcaecati, iusto nemo!</p>
+        </section>
+
+        <div class="iconos">
+            <ul class="iconos__listado">
+                <li class="iconos__item">
+                    <img class="iconos__icono" src="build/img/icono_cafe.svg" alt="icono café" height="200" width="200">
+                    <p class="iconos__p">Café</p>
+                </li>
+                <li class="iconos__item">
+                    <img class="iconos__icono" src="build/img/icono_postre.svg" alt="icono postre" height="200" width="200">
+                    <p class="iconos__p">Postres</p>
+                </li>
+                <li class="iconos__item">
+                    <img class="iconos__icono" src="build/img/icono_te.svg" alt="icono té" height="200" width="200">
+                    <p class="iconos__p">Té</p>
+                </li>
+            </ul>
+        </div>
+
+        <section class="experiencia">
+            <h2 class="heading"><span class="heading__span">Vive la</span> experiencia</h2>
+            <div class="galeria">
+                <div class="galeria__div">
+                    <picture>
+                         <source srcset="build/img/galeria/galeria_01.avif" type="image/avif">
+                         <source srcset="build/img/galeria/galeria_01.webp" type="image/webp">
+                         <img src="build/img/galeria/galeria_01.jpg"  alt="imagen galeria" loading="lazy" height="480" width="480" class="galeria__imagen">
+                    </picture>
+                </div>
+                <div class="galeria__div">
+                    <picture>
+                         <source srcset="build/img/galeria/galeria_02.avif" type="image/avif">
+                         <source srcset="build/img/galeria/galeria_02.webp" type="image/webp">
+                         <img src="build/img/galeria/galeria_02.jpg"  alt="imagen galeria" loading="lazy" height="480" width="480" class="galeria__imagen">
+                    </picture>
+                </div>
+                <div class="galeria__div">
+                    <picture>
+                         <source srcset="build/img/galeria/galeria_03.avif" type="image/avif">
+                         <source srcset="build/img/galeria/galeria_03.webp" type="image/webp">
+                         <img src="build/img/galeria/galeria_03.jpg"  alt="imagen galeria" loading="lazy" height="480" width="480" class="galeria__imagen">
+                    </picture>
+                </div>
+                <div class="galeria__div">
+                    <picture>
+                         <source srcset="build/img/galeria/galeria_04.avif" type="image/avif">
+                         <source srcset="build/img/galeria/galeria_04.webp" type="image/webp">
+                         <img src="build/img/galeria/galeria_04.jpg"  alt="imagen galeria" loading="lazy" height="480" width="480" class="galeria__imagen">
+                    </picture>
+                </div>
+                <div class="galeria__div">
+                    <picture>
+                         <source srcset="build/img/galeria/galeria_05.avif" type="image/avif">
+                         <source srcset="build/img/galeria/galeria_05.webp" type="image/webp">
+                         <img src="build/img/galeria/galeria_05.jpg"  alt="imagen galeria" loading="lazy" height="480" width="480" class="galeria__imagen">
+                    </picture>
+                </div>
+                <div class="galeria__div">
+                    <picture>
+                         <source srcset="build/img/galeria/galeria_06.avif" type="image/avif">
+                         <source srcset="build/img/galeria/galeria_06.webp" type="image/webp">
+                         <img src="build/img/galeria/galeria_06.jpg"  alt="imagen galeria" loading="lazy" height="480" width="480" class="galeria__imagen">
+                    </picture>
+                </div>
+                <div class="galeria__div">
+                    <picture>
+                         <source srcset="build/img/galeria/galeria_07.avif" type="image/avif">
+                         <source srcset="build/img/galeria/galeria_07.webp" type="image/webp">
+                         <img src="build/img/galeria/galeria_07.jpg"  alt="imagen galeria" loading="lazy" height="480" width="480" class="galeria__imagen">
+                    </picture>
+                </div>
+                <div class="galeria__div">
+                    <picture>
+                         <source srcset="build/img/galeria/galeria_08.avif" type="image/avif">
+                         <source srcset="build/img/galeria/galeria_08.webp" type="image/webp">
+                         <img src="build/img/galeria/galeria_08.jpg"  alt="imagen galeria" loading="lazy" height="480" width="480" class="galeria__imagen">
+                    </picture>
+                </div>
+                <div class="galeria__div">
+                    <picture>
+                         <source srcset="build/img/galeria/galeria_09.avif" type="image/avif">
+                         <source srcset="build/img/galeria/galeria_09.webp" type="image/webp">
+                         <img src="build/img/galeria/galeria_09.jpg"  alt="imagen galeria" loading="lazy" height="480" width="480" class="galeria__imagen">
+                    </picture>
+                </div>
+                <div class="galeria__div">
+                    <picture>
+                         <source srcset="build/img/galeria/galeria_10.avif" type="image/avif">
+                         <source srcset="build/img/galeria/galeria_10.webp" type="image/webp">
+                         <img src="build/img/galeria/galeria_10.jpg"  alt="imagen galeria" loading="lazy" height="480" width="480" class="galeria__imagen">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <section class="menu">
+        <div class="menu__contenedor">
+            <h2 class="heading heading--blanco text-center "><span class="heading__span heading__span--blanco">Nuestro delicioso</span> Menú</h2>
+            <div class="menu__grid">
+                <section class="menu__categoria">
+                    <h3 class="menu__heading text-center ">Café</h3>
+                    <ul class="menu__lista">
+                        <li class="menu__item">
+                            <p class="menu__producto"><span class="menu__nombre">Café Latte </span><span class="menu__descripcion">Café expreso con leche caliente evaporada</span></p>
+                            <p class="menu__precio">$25</p>
+                        </li>
+                        <li class="menu__item">
+                            <p class="menu__producto"><span class="menu__nombre">Café Mocha </span><span class="menu__descripcion">Espresso con crema batida</span> </p>
+                            <p class="menu__precio">$30</p>
+                        </li>
+                        <li class="menu__item">
+                            <p class="menu__producto"><span class="menu__nombre">Café Americano</span><span class="menu__descripcion">Café Negro</span> </p>
+                            <p class="menu__precio">$30</p>
+                        </li>
+                        <li class="menu__item">
+                            <p class="menu__producto"><span class="menu__nombre">Capuccino</span><span class="menu__descripcion">Espresso con una capa suave de espuma</span> </p>
+                            <p class="menu__precio">$25</p>
+                        </li>
+                        <li class="menu__item">
+                            <p class="menu__producto"><span class="menu__nombre">Café Mocha Frio</span><span class="menu__descripcion">Espresso, dulce con mocha y leche.</span> </p>
+                            <p class="menu__precio">$29</p>
+                        </li>
+                        <li class="menu__item">
+                            <p class="menu__producto"><span class="menu__nombre">Mocha Frio Quemado</span><span class="menu__descripcion">Espresso, hielo, con azucar quemada y mantequilla.</span> </p>
+                            <p class="menu__precio">$35</p>
+                        </li>
+                        <li class="menu__item">
+                            <p class="menu__producto"><span class="menu__nombre">Latte con Caramelo</span><span class="menu__descripcion">Espresso, leche y caramelo.</span> </p>
+                            <p class="menu__precio">$39</p>
+                        </li>
+                    </ul><!-- Fin lista café -->
+                </section>
+
+                <section class="menu__categoria">
+                    <h3 class="menu__heading text-center ">Comida</h3>
+                    <ul class="menu__lista">
+                        <li class="menu__item">
+                            <p class="menu__producto"><span class="menu__nombre">Baguette de Pollo</span><span class="menu__descripcion">Delicioso Baguette con pollo a la plancha</span> </p>
+                            <p class="menu__precio">$45</p>
+                        </li>
+                        <li class="menu__item">
+                            <p class="menu__producto"><span class="menu__nombre">Baguette Pollo y Queso </span><span class="menu__descripcion">Baguette combinado con Pollo y Queso Manchego</span> </p>
+                            <p class="menu__precio">$50</p>
+                        </li>
+                        <li class="menu__item">
+                            <p class="menu__producto"><span class="menu__nombre">Baguette con Tocino</span><span class="menu__descripcion">Baguette con especias y verduras, además de tocino</span> </p>
+                            <p class="menu__precio">$50</p>
+                        </li>
+                        <li class="menu__item">
+                            <p class="menu__producto"><span class="menu__nombre">Baguette de Jamón</span><span class="menu__descripcion">Delicioso Baguette con Jamón y Especias</span> </p>
+                            <p class="menu__precio">$65</p>
+                        </li>
+                        <li class="menu__item">
+                            <p class="menu__producto"><span class="menu__nombre">Baguette con Jamón, Queso y Tocino</span><span class="menu__descripcion">El especial de la casa</span> </p>
+                            <p class="menu__precio">$69</p>
+                        </li>
+                        <li class="menu__item">
+                            <p class="menu__producto"><span class="menu__nombre">Sandwich de Pollo</span><span class="menu__descripcion">Delicioso sandwich con Pollo y especies</span> </p>
+                            <p class="menu__precio">$65</p>
+                        </li>
+                        <li class="menu__item">
+                            <p class="menu__producto"><span class="menu__nombre">Sandwich de Jamón y queso</span><span class="menu__descripcion">Queso Amarillo con Jamón y Queso</span> </p>
+                            <p class="menu__precio">$59</p>
+                        </li>
+                    </ul><!-- Fin lista comida -->
+                </section>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimoniales">
+        <div class="text-center testimoniales__contenedor">
+            <h2 class="heading"><span class="heading__span">Lo que dicen nuestros</span>clientes</h2>
+            <div class="testimoniales__testimonios">
+                <p class="testimoniales__testimonio">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus tempora quae veniam, commodi atque corporis iste odit repellat at quo nihil optio esse iure nemo saepe delectus rem quos fugit!</p>
+                <p class="testimoniales__autor">- Ernesto López</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="text-center footer__contenedor">
+            <div class="footer__grid">
+                <div class="footer__box">
+                    <h3 class="footer__heading">Ubicación</h3>
+                    <p class="footer__info">Nicolas Copérnico 5990 </p>
+                    <p class="footer__info">Guadalajara, Jalisco</p>
+                </div>
+                <div class="footer__box">
+                    <h3 class="footer__heading">Reservación</h3>
+                    <p class="footer__info">Tel. 3850-9102</p>
+                    <a class="footer__info" href="tel:3850-9102">Llamar</a>
+                </div>
+                <div class="footer__box">
+                    <h3 class="footer__heading">Horarios</h3>
+                    <p class="footer__info">Lun-Jue: 11:00 - 22:00</p>
+                    <p class="footer__info">Vie-Sab: 09:00 - 24:00</p>
+                    <p class="footer__info">Domingo: Cerrado</p>
+                </div>
+            </div>
+            <p class="footer__copy">Todos los derechos reservados. La cafetería</p>
+        </div>
+    </footer>
+
+    <script src="build/js/imagenes.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.notavif.notwebp .nota{
+    @include m.tablet { 
+        background-image: url(../img/cafe.jpg);
+    }
+}
+.webp .nota{
+    @include m.tablet { 
+        background-image: url(../img/cafe.webp);
+    }    
+}
+.avif .nota{
+    @include m.tablet { 
+        background-image: url(../img/cafe.avif);
+    }    
+}
+.nota{
+    text-align: left;
+    @include m.tablet { 
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-repeat: no-repeat;
+        aspect-ratio: 16/9;
+        background-position: right bottom;
+        background-size: 40%;
+    }
+}
+.pbcero{
+    @include m.tablet { 
+        padding-bottom: 0;
+    }
+}
+.nota__parrafo{
+    font-size: v.$font-size-md;
+}

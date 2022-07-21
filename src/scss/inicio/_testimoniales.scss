@@ -1,0 +1,25 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.testimoniales__contenedor{
+    background-color: v.$blanco;
+    padding: v.$sep50  v.$sep20;
+    @include m.tablet { 
+        padding: calc( v.$sep50*2)  v.$sep20;
+        margin-top: - calc(v.$sep50*2);
+    }
+}
+.testimoniales__testimonios{
+    max-width: calc(v.$sep50*10);
+    margin: 0 auto;
+    background-color: v.$cafeClaro;
+    padding: v.$sep20 v.$sep40;
+    border-radius:  v.$sep10;
+}
+.testimoniales__autor{
+    text-align: right;
+    color: v.$primario;
+    font-size: v.$font-size-lg;
+    font-family: v.$fuenteCursiva
+    
+}

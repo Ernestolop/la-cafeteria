@@ -1,0 +1,57 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.menu{
+    background-image: url(../img/menu_arriba.svg), url(../img/menu_abajo.svg);
+    background-repeat: no-repeat;
+    background-position: center 2%, center 96%;
+    background-size: 200%;
+    padding: calc(v.$sep50*3) v.$sep50 calc(v.$sep50*4) v.$sep50;
+    background-color: v.$primario;
+    @include m.tablet { 
+        background-position: center 5%, center 93%;
+        background-size: 70%;
+        padding: calc(v.$sep50*3) 0 calc(v.$sep50*4) 0;
+    }
+}
+.menu__grid{
+    display: flex;
+    flex-direction: column;
+    gap: v.$sep20;
+    @include m.tablet { 
+        @include m.grid(2, v.$sep20)
+    }
+}
+.menu__heading{
+    color: v.$blanco;
+    margin-bottom: v.$sep30;
+}
+.menu__item{
+    display: flex;
+    flex-direction: column;
+    @include m.telefono { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.menu__producto{
+    font-size: v.$font-size-lg;
+}
+.menu__nombre{
+    color: v.$blanco;
+    display: block;
+}
+.menu__descripcion{
+    color: v.$secundario;
+}
+.menu__precio{
+    color: v.$blanco;
+    font-size: v.$font-size-xl;
+    font-weight: 900;
+    margin-top: 0;
+    @include m.telefono { 
+        margin: 0;
+    }
+}

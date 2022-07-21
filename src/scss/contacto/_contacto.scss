@@ -1,0 +1,50 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.notavif.notwebp .reservaciones{
+    @include m.tablet { 
+        background-image: url(../img/granos_cafe.jpg);
+    }
+}
+.webp .reservaciones{
+    @include m.tablet { 
+        background-image: url(../img/granos_cafe.webp);
+    }    
+}
+.avif .reservaciones{
+    @include m.tablet { 
+        background-image: url(../img/granos_cafe.avif);
+    }    
+}
+.reservaciones{
+    @include m.tablet { 
+        display:grid; 
+        grid-template-columns: repeat(2,1fr);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 40%;
+    }
+}
+.formulario__campo{
+    margin-bottom: v.$sep20;
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+}
+.formulario__label{
+    display: block;
+    text-transform: uppercase;
+    font-size: v.$font-size-lg;
+    font-weight: 700;
+    text-align: left;
+}
+.formulario__input{
+    padding: 1rem;
+    width: 100%;
+    border: 5px solid v.$primario;
+}
+.formulario__input--btn{
+    color: v.$blanco;
+    background-color: v.$primario;
+}
+
